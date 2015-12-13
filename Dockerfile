@@ -7,6 +7,7 @@ ENV GRADLE_SHA256=c9159ec4362284c0a38d73237e224deae6139cbde0db4f0f44e1c7691dd3de
 
 VOLUME /project
 ENV GRADLE_HOME /gradle
+ENV GRADLE_USER_HOME /project/.gradle
 
 WORKDIR /tmp
 RUN wget -O gradle.zip $GRADLE_URL \
