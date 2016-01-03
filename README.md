@@ -57,3 +57,12 @@ docker run --rm -v `pwd`:/project -u `id -u`:`id -g` metahelicase/gradle build
 
 The project dependencies are stored under the project folder, inside the `.gradle/caches` directory.
 After the first build, gradle uses the stored dependencies instead of downloading them again.
+
+### Maven artifacts
+
+The maven repository is located inside the container at `/gradle/.m2`.
+Mount the host repository to use maven dependencies and publish artifacts, by adding the option
+
+```
+-v $HOME/.m2:/gradle/.m2
+```
