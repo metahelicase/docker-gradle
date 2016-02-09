@@ -1,9 +1,9 @@
 FROM java:8
 MAINTAINER Francesco Komauli <francesco.komauli@gmail.com>
 
-ENV GRADLE_VERSION=2.11
+ENV GRADLE_VERSION=2.10
 ENV GRADLE_URL=https://downloads.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip
-ENV GRADLE_SHA256=8d7437082356c9fd6309a4479c8db307673965546daea445c6c72759cd6b1ed6
+ENV GRADLE_SHA256=66406247f745fc6f05ab382d3f8d3e120c339f34ef54b86f6dc5f6efc18fbb13
 
 VOLUME /project
 ENV GRADLE_HOME /gradle
