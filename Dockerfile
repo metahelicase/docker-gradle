@@ -1,9 +1,9 @@
 FROM java:8
 MAINTAINER Francesco Komauli <francesco.komauli@gmail.com>
 
-ARG GRADLE_VERSION=3.0
+ARG GRADLE_VERSION=3.1
 ARG GRADLE_URL=https://downloads.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip
-ARG GRADLE_SHA256=39c906941a474444afbddc38144ed44166825acb0a57b0551dddb04bbf157f80
+ARG GRADLE_SHA256=c7de3442432253525902f7e8d7eac8b5fd6ce1623f96d76916af6d0e383010fc
 
 VOLUME /project
 ENV GRADLE_HOME /gradle
